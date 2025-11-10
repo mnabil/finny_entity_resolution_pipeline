@@ -60995,3 +60995,1155 @@ drop view if exists "finny_db"."public_marts"."prospect_matching_ratio__dbt_back
 [0m18:57:06.126361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3d7cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10451c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104553710>]}
 [0m18:57:06.126517 [debug] [MainThread]: Flushing usage events
 [0m18:57:06.343804 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2025-11-10 01:23:13.470789 | 019a6b5c-29b2-7a40-ae9e-f904e7bfaa82 ====================
+==================== 2025-11-10 01:23:46.255356 | 019a6b5c-a9ce-7e22-b6e4-d21b96dc642d ====================
+dbt-fusion 2.0.0-preview.63
+   Loading profiles.yml
+01:23:46.737445 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully [33.3s]
+[0m20:27:12.917162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1103e35d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110467a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110467f90>]}
+
+
+============================== 20:27:12.919984 | fd44d533-cde5-47ea-a2d6-905a9f1a776a ==============================
+[0m20:27:12.919984 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:27:12.920275 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'profiles_dir': '/Users/mahmoud/Workspace/finny/dbt_service', 'fail_fast': 'False', 'write_json': 'True', 'quiet': 'False', 'log_format': 'default', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'partial_parse': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'introspect': 'True', 'log_path': '/Users/mahmoud/Workspace/finny/dbt_service/logs'}
+[0m20:27:13.049902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fd44d533-cde5-47ea-a2d6-905a9f1a776a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110496410>]}
+[0m20:27:13.079552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fd44d533-cde5-47ea-a2d6-905a9f1a776a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046cc750>]}
+[0m20:27:13.080232 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m20:27:13.127733 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m20:27:13.196473 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:27:13.196720 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:27:13.220420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fd44d533-cde5-47ea-a2d6-905a9f1a776a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110459850>]}
+[0m20:27:13.233454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fd44d533-cde5-47ea-a2d6-905a9f1a776a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1129f9fd0>]}
+[0m20:27:13.233703 [info ] [MainThread]: Found 18 models, 3 seeds, 11 data tests, 2 sources, 453 macros
+[0m20:27:13.233871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fd44d533-cde5-47ea-a2d6-905a9f1a776a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109ce4d0>]}
+[0m20:27:13.234979 [info ] [MainThread]: 
+[0m20:27:13.235144 [info ] [MainThread]: Concurrency: 32 threads (target='dev')
+[0m20:27:13.235263 [info ] [MainThread]: 
+[0m20:27:13.235472 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m20:27:13.237365 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_marts'
+[0m20:27:13.237586 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public'
+[0m20:27:13.243796 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_staging'
+[0m20:27:13.244787 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_staging_analysis'
+[0m20:27:13.245094 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_raw'
+[0m20:27:13.246050 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_raw_analysis'
+[0m20:27:13.294811 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_marts"
+[0m20:27:13.295019 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public"
+[0m20:27:13.295189 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_staging"
+[0m20:27:13.295340 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_staging_analysis"
+[0m20:27:13.295484 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_raw"
+[0m20:27:13.295608 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_raw_analysis"
+[0m20:27:13.295726 [debug] [ThreadPool]: On list_finny_db_public_marts: BEGIN
+[0m20:27:13.295868 [debug] [ThreadPool]: On list_finny_db_public: BEGIN
+[0m20:27:13.296007 [debug] [ThreadPool]: On list_finny_db_public_staging: BEGIN
+[0m20:27:13.296139 [debug] [ThreadPool]: On list_finny_db_public_staging_analysis: BEGIN
+[0m20:27:13.296259 [debug] [ThreadPool]: On list_finny_db_public_raw: BEGIN
+[0m20:27:13.296376 [debug] [ThreadPool]: On list_finny_db_public_raw_analysis: BEGIN
+[0m20:27:13.296498 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:13.296622 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:13.296738 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:13.296853 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:13.296965 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:13.297075 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:13.349236 [debug] [ThreadPool]: SQL status: BEGIN in 0.053 seconds
+[0m20:27:13.349426 [debug] [ThreadPool]: SQL status: BEGIN in 0.053 seconds
+[0m20:27:13.349609 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_marts"
+[0m20:27:13.349765 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public"
+[0m20:27:13.349920 [debug] [ThreadPool]: On list_finny_db_public_marts: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_marts"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m20:27:13.350102 [debug] [ThreadPool]: SQL status: BEGIN in 0.053 seconds
+[0m20:27:13.350231 [debug] [ThreadPool]: SQL status: BEGIN in 0.053 seconds
+[0m20:27:13.350371 [debug] [ThreadPool]: On list_finny_db_public: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m20:27:13.350492 [debug] [ThreadPool]: SQL status: BEGIN in 0.054 seconds
+[0m20:27:13.350656 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_raw_analysis"
+[0m20:27:13.350787 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_staging_analysis"
+[0m20:27:13.350938 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_raw"
+[0m20:27:13.351085 [debug] [ThreadPool]: On list_finny_db_public_raw_analysis: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_raw_analysis"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_raw_analysis'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_raw_analysis'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_raw_analysis'
+  
+[0m20:27:13.351246 [debug] [ThreadPool]: On list_finny_db_public_staging_analysis: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_staging_analysis"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging_analysis'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging_analysis'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging_analysis'
+  
+[0m20:27:13.351442 [debug] [ThreadPool]: On list_finny_db_public_raw: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_raw"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_raw'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_raw'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_raw'
+  
+[0m20:27:13.353926 [debug] [ThreadPool]: SQL status: BEGIN in 0.057 seconds
+[0m20:27:13.354081 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_staging"
+[0m20:27:13.354239 [debug] [ThreadPool]: On list_finny_db_public_staging: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_staging"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m20:27:13.356097 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.005 seconds
+[0m20:27:13.356371 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.005 seconds
+[0m20:27:13.356600 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.006 seconds
+[0m20:27:13.357419 [debug] [ThreadPool]: On list_finny_db_public: ROLLBACK
+[0m20:27:13.357631 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.006 seconds
+[0m20:27:13.357783 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.006 seconds
+[0m20:27:13.357917 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.004 seconds
+[0m20:27:13.358483 [debug] [ThreadPool]: On list_finny_db_public_raw: ROLLBACK
+[0m20:27:13.358933 [debug] [ThreadPool]: On list_finny_db_public_marts: ROLLBACK
+[0m20:27:13.359443 [debug] [ThreadPool]: On list_finny_db_public_staging_analysis: ROLLBACK
+[0m20:27:13.359604 [debug] [ThreadPool]: On list_finny_db_public: Close
+[0m20:27:13.360127 [debug] [ThreadPool]: On list_finny_db_public_raw_analysis: ROLLBACK
+[0m20:27:13.360583 [debug] [ThreadPool]: On list_finny_db_public_staging: ROLLBACK
+[0m20:27:13.361600 [debug] [ThreadPool]: On list_finny_db_public_staging_analysis: Close
+[0m20:27:13.361773 [debug] [ThreadPool]: On list_finny_db_public_raw: Close
+[0m20:27:13.361891 [debug] [ThreadPool]: On list_finny_db_public_marts: Close
+[0m20:27:13.362015 [debug] [ThreadPool]: On list_finny_db_public_raw_analysis: Close
+[0m20:27:13.362933 [debug] [ThreadPool]: On list_finny_db_public_staging: Close
+[0m20:27:13.367049 [debug] [MainThread]: Using postgres connection "master"
+[0m20:27:13.367199 [debug] [MainThread]: On master: BEGIN
+[0m20:27:13.367318 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:27:13.374519 [debug] [MainThread]: SQL status: BEGIN in 0.007 seconds
+[0m20:27:13.374711 [debug] [MainThread]: Using postgres connection "master"
+[0m20:27:13.374904 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m20:27:13.381823 [debug] [MainThread]: SQL status: SELECT 11 in 0.007 seconds
+[0m20:27:13.383300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fd44d533-cde5-47ea-a2d6-905a9f1a776a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a90c10>]}
+[0m20:27:13.383568 [debug] [MainThread]: On master: ROLLBACK
+[0m20:27:13.384343 [debug] [MainThread]: On master: Close
+[0m20:27:13.388374 [debug] [Thread-1 (]: Began running node seed.dbt_service.fxf_data
+[0m20:27:13.388638 [debug] [Thread-2 (]: Began running node seed.dbt_service.pdl_data
+[0m20:27:13.388924 [debug] [Thread-3 (]: Began running node seed.dbt_service.state_iso_mapping
+[0m20:27:13.389247 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_finny_db_public_marts, now seed.dbt_service.fxf_data)
+[0m20:27:13.389511 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_finny_db_public, now seed.dbt_service.pdl_data)
+[0m20:27:13.389760 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_finny_db_public_staging, now seed.dbt_service.state_iso_mapping)
+[0m20:27:13.389919 [debug] [Thread-1 (]: Began compiling node seed.dbt_service.fxf_data
+[0m20:27:13.390077 [debug] [Thread-2 (]: Began compiling node seed.dbt_service.pdl_data
+[0m20:27:13.390204 [debug] [Thread-3 (]: Began compiling node seed.dbt_service.state_iso_mapping
+[0m20:27:13.392935 [debug] [Thread-1 (]: Began executing node seed.dbt_service.fxf_data
+[0m20:27:13.393648 [debug] [Thread-2 (]: Began executing node seed.dbt_service.pdl_data
+[0m20:27:13.394361 [debug] [Thread-3 (]: Began executing node seed.dbt_service.state_iso_mapping
+[0m20:27:13.394746 [debug] [Thread-1 (]: Finished running node seed.dbt_service.fxf_data
+[0m20:27:13.395030 [debug] [Thread-2 (]: Finished running node seed.dbt_service.pdl_data
+[0m20:27:13.395386 [debug] [Thread-3 (]: Finished running node seed.dbt_service.state_iso_mapping
+[0m20:27:13.395886 [debug] [Thread-5 (]: Began running node model.dbt_service.raw_fxf_data
+[0m20:27:13.396089 [debug] [Thread-6 (]: Began running node model.dbt_service.raw_pdl_data
+[0m20:27:13.396352 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly list_finny_db_public_raw, now model.dbt_service.raw_fxf_data)
+[0m20:27:13.396581 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly list_finny_db_public_raw_analysis, now model.dbt_service.raw_pdl_data)
+[0m20:27:13.396770 [debug] [Thread-5 (]: Began compiling node model.dbt_service.raw_fxf_data
+[0m20:27:13.396970 [debug] [Thread-6 (]: Began compiling node model.dbt_service.raw_pdl_data
+[0m20:27:13.398474 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_service.raw_fxf_data"
+[0m20:27:13.400127 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_service.raw_pdl_data"
+[0m20:27:13.400846 [debug] [Thread-6 (]: Began executing node model.dbt_service.raw_pdl_data
+[0m20:27:13.401006 [debug] [Thread-5 (]: Began executing node model.dbt_service.raw_fxf_data
+[0m20:27:13.401324 [debug] [Thread-6 (]: Finished running node model.dbt_service.raw_pdl_data
+[0m20:27:13.401599 [debug] [Thread-5 (]: Finished running node model.dbt_service.raw_fxf_data
+[0m20:27:13.401934 [debug] [Thread-5 (]: Began running node model.dbt_service.stg_pdl_data
+[0m20:27:13.402112 [debug] [Thread-8 (]: Began running node test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df
+[0m20:27:13.402296 [debug] [Thread-9 (]: Began running node test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda
+[0m20:27:13.402514 [debug] [Thread-10 ]: Began running node model.dbt_service.raw_company_profiling
+[0m20:27:13.402679 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_service.raw_fxf_data, now model.dbt_service.stg_pdl_data)
+[0m20:27:13.402840 [debug] [Thread-11 ]: Began running node model.dbt_service.raw_data_profiling
+[0m20:27:13.402986 [debug] [Thread-12 ]: Began running node model.dbt_service.raw_location_profiling
+[0m20:27:13.403150 [debug] [Thread-13 ]: Began running node model.dbt_service.stg_fxf_data
+[0m20:27:13.403344 [debug] [Thread-8 (]: Acquiring new postgres connection 'test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df'
+[0m20:27:13.403478 [debug] [Thread-14 ]: Began running node test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed
+[0m20:27:13.403684 [debug] [Thread-15 ]: Began running node test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66
+[0m20:27:13.403878 [debug] [Thread-9 (]: Acquiring new postgres connection 'test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda'
+[0m20:27:13.404081 [debug] [Thread-10 ]: Acquiring new postgres connection 'model.dbt_service.raw_company_profiling'
+[0m20:27:13.404230 [debug] [Thread-5 (]: Began compiling node model.dbt_service.stg_pdl_data
+[0m20:27:13.404414 [debug] [Thread-11 ]: Acquiring new postgres connection 'model.dbt_service.raw_data_profiling'
+[0m20:27:13.404603 [debug] [Thread-12 ]: Acquiring new postgres connection 'model.dbt_service.raw_location_profiling'
+[0m20:27:13.404848 [debug] [Thread-13 ]: Acquiring new postgres connection 'model.dbt_service.stg_fxf_data'
+[0m20:27:13.405045 [debug] [Thread-8 (]: Began compiling node test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df
+[0m20:27:13.405330 [debug] [Thread-14 ]: Acquiring new postgres connection 'test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed'
+[0m20:27:13.405577 [debug] [Thread-15 ]: Acquiring new postgres connection 'test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66'
+[0m20:27:13.405783 [debug] [Thread-9 (]: Began compiling node test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda
+[0m20:27:13.405968 [debug] [Thread-10 ]: Began compiling node model.dbt_service.raw_company_profiling
+[0m20:27:13.407474 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_service.stg_pdl_data"
+[0m20:27:13.407646 [debug] [Thread-11 ]: Began compiling node model.dbt_service.raw_data_profiling
+[0m20:27:13.407806 [debug] [Thread-12 ]: Began compiling node model.dbt_service.raw_location_profiling
+[0m20:27:13.407987 [debug] [Thread-13 ]: Began compiling node model.dbt_service.stg_fxf_data
+[0m20:27:13.413817 [debug] [Thread-8 (]: Writing injected SQL for node "test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df"
+[0m20:27:13.414074 [debug] [Thread-14 ]: Began compiling node test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed
+[0m20:27:13.414251 [debug] [Thread-15 ]: Began compiling node test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66
+[0m20:27:13.417031 [debug] [Thread-9 (]: Writing injected SQL for node "test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda"
+[0m20:27:13.418394 [debug] [Thread-10 ]: Writing injected SQL for node "model.dbt_service.raw_company_profiling"
+[0m20:27:13.420063 [debug] [Thread-11 ]: Writing injected SQL for node "model.dbt_service.raw_data_profiling"
+[0m20:27:13.422123 [debug] [Thread-12 ]: Writing injected SQL for node "model.dbt_service.raw_location_profiling"
+[0m20:27:13.423402 [debug] [Thread-13 ]: Writing injected SQL for node "model.dbt_service.stg_fxf_data"
+[0m20:27:13.423564 [debug] [Thread-5 (]: Began executing node model.dbt_service.stg_pdl_data
+[0m20:27:13.425070 [debug] [Thread-14 ]: Writing injected SQL for node "test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed"
+[0m20:27:13.426669 [debug] [Thread-15 ]: Writing injected SQL for node "test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66"
+[0m20:27:13.426975 [debug] [Thread-8 (]: Began executing node test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df
+[0m20:27:13.427949 [debug] [Thread-5 (]: Finished running node model.dbt_service.stg_pdl_data
+[0m20:27:13.428098 [debug] [Thread-9 (]: Began executing node test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda
+[0m20:27:13.428278 [debug] [Thread-10 ]: Began executing node model.dbt_service.raw_company_profiling
+[0m20:27:13.428478 [debug] [Thread-11 ]: Began executing node model.dbt_service.raw_data_profiling
+[0m20:27:13.428646 [debug] [Thread-12 ]: Began executing node model.dbt_service.raw_location_profiling
+[0m20:27:13.428805 [debug] [Thread-13 ]: Began executing node model.dbt_service.stg_fxf_data
+[0m20:27:13.429094 [debug] [Thread-8 (]: Finished running node test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df
+[0m20:27:13.429336 [debug] [Thread-15 ]: Began executing node test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66
+[0m20:27:13.429541 [debug] [Thread-17 ]: Began running node test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7
+[0m20:27:13.429691 [debug] [Thread-18 ]: Began running node test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa
+[0m20:27:13.429835 [debug] [Thread-14 ]: Began executing node test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed
+[0m20:27:13.430092 [debug] [Thread-9 (]: Finished running node test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda
+[0m20:27:13.430346 [debug] [Thread-10 ]: Finished running node model.dbt_service.raw_company_profiling
+[0m20:27:13.430595 [debug] [Thread-11 ]: Finished running node model.dbt_service.raw_data_profiling
+[0m20:27:13.430852 [debug] [Thread-12 ]: Finished running node model.dbt_service.raw_location_profiling
+[0m20:27:13.431113 [debug] [Thread-13 ]: Finished running node model.dbt_service.stg_fxf_data
+[0m20:27:13.431406 [debug] [Thread-15 ]: Finished running node test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66
+[0m20:27:13.431606 [debug] [Thread-17 ]: Acquiring new postgres connection 'test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7'
+[0m20:27:13.431807 [debug] [Thread-18 ]: Acquiring new postgres connection 'test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa'
+[0m20:27:13.432047 [debug] [Thread-14 ]: Finished running node test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed
+[0m20:27:13.432482 [debug] [Thread-17 ]: Began compiling node test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7
+[0m20:27:13.432632 [debug] [Thread-20 ]: Began running node model.dbt_service.company_analysis
+[0m20:27:13.432783 [debug] [Thread-21 ]: Began running node model.dbt_service.staging_city_state_profiling
+[0m20:27:13.432956 [debug] [Thread-22 ]: Began running node model.dbt_service.staging_company_profiling
+[0m20:27:13.433116 [debug] [Thread-18 ]: Began compiling node test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa
+[0m20:27:13.433263 [debug] [Thread-23 ]: Began running node model.dbt_service.staging_data_profiling
+[0m20:27:13.433408 [debug] [Thread-24 ]: Began running node model.dbt_service.staging_location_profiling
+[0m20:27:13.433550 [debug] [Thread-25 ]: Began running node model.dbt_service.stg_unified_prospects
+[0m20:27:13.433675 [debug] [Thread-26 ]: Began running node test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1
+[0m20:27:13.433811 [debug] [Thread-27 ]: Began running node test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe
+[0m20:27:13.433944 [debug] [Thread-14 ]: Began running node test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25
+[0m20:27:13.435428 [debug] [Thread-17 ]: Writing injected SQL for node "test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7"
+[0m20:27:13.435627 [debug] [Thread-20 ]: Acquiring new postgres connection 'model.dbt_service.company_analysis'
+[0m20:27:13.435809 [debug] [Thread-21 ]: Acquiring new postgres connection 'model.dbt_service.staging_city_state_profiling'
+[0m20:27:13.435999 [debug] [Thread-22 ]: Acquiring new postgres connection 'model.dbt_service.staging_company_profiling'
+[0m20:27:13.437245 [debug] [Thread-18 ]: Writing injected SQL for node "test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa"
+[0m20:27:13.437429 [debug] [Thread-23 ]: Acquiring new postgres connection 'model.dbt_service.staging_data_profiling'
+[0m20:27:13.437613 [debug] [Thread-24 ]: Acquiring new postgres connection 'model.dbt_service.staging_location_profiling'
+[0m20:27:13.437787 [debug] [Thread-25 ]: Acquiring new postgres connection 'model.dbt_service.stg_unified_prospects'
+[0m20:27:13.437950 [debug] [Thread-26 ]: Acquiring new postgres connection 'test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1'
+[0m20:27:13.438171 [debug] [Thread-27 ]: Acquiring new postgres connection 'test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe'
+[0m20:27:13.438333 [debug] [Thread-14 ]: Re-using an available connection from the pool (formerly test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed, now test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25)
+[0m20:27:13.438540 [debug] [Thread-20 ]: Began compiling node model.dbt_service.company_analysis
+[0m20:27:13.438700 [debug] [Thread-21 ]: Began compiling node model.dbt_service.staging_city_state_profiling
+[0m20:27:13.438850 [debug] [Thread-22 ]: Began compiling node model.dbt_service.staging_company_profiling
+[0m20:27:13.439033 [debug] [Thread-23 ]: Began compiling node model.dbt_service.staging_data_profiling
+[0m20:27:13.439164 [debug] [Thread-17 ]: Began executing node test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7
+[0m20:27:13.439318 [debug] [Thread-24 ]: Began compiling node model.dbt_service.staging_location_profiling
+[0m20:27:13.439481 [debug] [Thread-25 ]: Began compiling node model.dbt_service.stg_unified_prospects
+[0m20:27:13.439611 [debug] [Thread-18 ]: Began executing node test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa
+[0m20:27:13.439753 [debug] [Thread-26 ]: Began compiling node test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1
+[0m20:27:13.439902 [debug] [Thread-27 ]: Began compiling node test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe
+[0m20:27:13.440056 [debug] [Thread-14 ]: Began compiling node test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25
+[0m20:27:13.442355 [debug] [Thread-20 ]: Writing injected SQL for node "model.dbt_service.company_analysis"
+[0m20:27:13.443681 [debug] [Thread-21 ]: Writing injected SQL for node "model.dbt_service.staging_city_state_profiling"
+[0m20:27:13.444994 [debug] [Thread-22 ]: Writing injected SQL for node "model.dbt_service.staging_company_profiling"
+[0m20:27:13.446316 [debug] [Thread-23 ]: Writing injected SQL for node "model.dbt_service.staging_data_profiling"
+[0m20:27:13.446686 [debug] [Thread-17 ]: Finished running node test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7
+[0m20:27:13.448119 [debug] [Thread-24 ]: Writing injected SQL for node "model.dbt_service.staging_location_profiling"
+[0m20:27:13.449627 [debug] [Thread-25 ]: Writing injected SQL for node "model.dbt_service.stg_unified_prospects"
+[0m20:27:13.450040 [debug] [Thread-18 ]: Finished running node test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa
+[0m20:27:13.451534 [debug] [Thread-26 ]: Writing injected SQL for node "test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1"
+[0m20:27:13.452815 [debug] [Thread-27 ]: Writing injected SQL for node "test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe"
+[0m20:27:13.454077 [debug] [Thread-14 ]: Writing injected SQL for node "test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25"
+[0m20:27:13.455676 [debug] [Thread-24 ]: Began executing node model.dbt_service.staging_location_profiling
+[0m20:27:13.455888 [debug] [Thread-20 ]: Began executing node model.dbt_service.company_analysis
+[0m20:27:13.456046 [debug] [Thread-22 ]: Began executing node model.dbt_service.staging_company_profiling
+[0m20:27:13.456233 [debug] [Thread-21 ]: Began executing node model.dbt_service.staging_city_state_profiling
+[0m20:27:13.456406 [debug] [Thread-23 ]: Began executing node model.dbt_service.staging_data_profiling
+[0m20:27:13.456614 [debug] [Thread-25 ]: Began executing node model.dbt_service.stg_unified_prospects
+[0m20:27:13.457213 [debug] [Thread-24 ]: Finished running node model.dbt_service.staging_location_profiling
+[0m20:27:13.457496 [debug] [Thread-20 ]: Finished running node model.dbt_service.company_analysis
+[0m20:27:13.457801 [debug] [Thread-22 ]: Finished running node model.dbt_service.staging_company_profiling
+[0m20:27:13.457944 [debug] [Thread-27 ]: Began executing node test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe
+[0m20:27:13.458106 [debug] [Thread-14 ]: Began executing node test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25
+[0m20:27:13.458248 [debug] [Thread-26 ]: Began executing node test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1
+[0m20:27:13.458517 [debug] [Thread-21 ]: Finished running node model.dbt_service.staging_city_state_profiling
+[0m20:27:13.458777 [debug] [Thread-23 ]: Finished running node model.dbt_service.staging_data_profiling
+[0m20:27:13.459031 [debug] [Thread-25 ]: Finished running node model.dbt_service.stg_unified_prospects
+[0m20:27:13.459341 [debug] [Thread-29 ]: Began running node test.dbt_service.not_null_company_analysis_company.b4c562fde2
+[0m20:27:13.459490 [debug] [Thread-30 ]: Began running node test.dbt_service.unique_company_analysis_company.2a96b2dba1
+[0m20:27:13.459805 [debug] [Thread-27 ]: Finished running node test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe
+[0m20:27:13.460068 [debug] [Thread-14 ]: Finished running node test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25
+[0m20:27:13.460311 [debug] [Thread-26 ]: Finished running node test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1
+[0m20:27:13.460657 [debug] [Thread-29 ]: Acquiring new postgres connection 'test.dbt_service.not_null_company_analysis_company.b4c562fde2'
+[0m20:27:13.460838 [debug] [Thread-32 ]: Began running node model.dbt_service.stg_prospect_matches
+[0m20:27:13.461073 [debug] [Thread-30 ]: Acquiring new postgres connection 'test.dbt_service.unique_company_analysis_company.2a96b2dba1'
+[0m20:27:13.461333 [debug] [Thread-29 ]: Began compiling node test.dbt_service.not_null_company_analysis_company.b4c562fde2
+[0m20:27:13.461525 [debug] [Thread-32 ]: Acquiring new postgres connection 'model.dbt_service.stg_prospect_matches'
+[0m20:27:13.461675 [debug] [Thread-30 ]: Began compiling node test.dbt_service.unique_company_analysis_company.2a96b2dba1
+[0m20:27:13.463273 [debug] [Thread-29 ]: Writing injected SQL for node "test.dbt_service.not_null_company_analysis_company.b4c562fde2"
+[0m20:27:13.463441 [debug] [Thread-32 ]: Began compiling node model.dbt_service.stg_prospect_matches
+[0m20:27:13.465451 [debug] [Thread-30 ]: Writing injected SQL for node "test.dbt_service.unique_company_analysis_company.2a96b2dba1"
+[0m20:27:13.469219 [debug] [Thread-32 ]: Writing injected SQL for node "model.dbt_service.stg_prospect_matches"
+[0m20:27:13.469774 [debug] [Thread-29 ]: Began executing node test.dbt_service.not_null_company_analysis_company.b4c562fde2
+[0m20:27:13.470207 [debug] [Thread-29 ]: Finished running node test.dbt_service.not_null_company_analysis_company.b4c562fde2
+[0m20:27:13.470377 [debug] [Thread-30 ]: Began executing node test.dbt_service.unique_company_analysis_company.2a96b2dba1
+[0m20:27:13.470707 [debug] [Thread-30 ]: Finished running node test.dbt_service.unique_company_analysis_company.2a96b2dba1
+[0m20:27:13.470879 [debug] [Thread-32 ]: Began executing node model.dbt_service.stg_prospect_matches
+[0m20:27:13.471159 [debug] [Thread-32 ]: Finished running node model.dbt_service.stg_prospect_matches
+[0m20:27:13.471487 [debug] [Thread-1 (]: Began running node model.dbt_service.prospect_matching_ratio
+[0m20:27:13.471680 [debug] [Thread-2 (]: Began running node model.dbt_service.stg_entity_clusters
+[0m20:27:13.471902 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_service.fxf_data, now model.dbt_service.prospect_matching_ratio)
+[0m20:27:13.472090 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_service.pdl_data, now model.dbt_service.stg_entity_clusters)
+[0m20:27:13.472245 [debug] [Thread-1 (]: Began compiling node model.dbt_service.prospect_matching_ratio
+[0m20:27:13.472393 [debug] [Thread-2 (]: Began compiling node model.dbt_service.stg_entity_clusters
+[0m20:27:13.475213 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_service.prospect_matching_ratio"
+[0m20:27:13.476282 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_service.stg_entity_clusters"
+[0m20:27:13.476923 [debug] [Thread-1 (]: Began executing node model.dbt_service.prospect_matching_ratio
+[0m20:27:13.477311 [debug] [Thread-1 (]: Finished running node model.dbt_service.prospect_matching_ratio
+[0m20:27:13.477478 [debug] [Thread-2 (]: Began executing node model.dbt_service.stg_entity_clusters
+[0m20:27:13.477789 [debug] [Thread-2 (]: Finished running node model.dbt_service.stg_entity_clusters
+[0m20:27:13.478103 [debug] [Thread-3 (]: Began running node model.dbt_service.data_overview
+[0m20:27:13.478295 [debug] [Thread-6 (]: Began running node model.dbt_service.setup_functions
+[0m20:27:13.478453 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.dbt_service.state_iso_mapping, now model.dbt_service.data_overview)
+[0m20:27:13.478661 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly model.dbt_service.raw_pdl_data, now model.dbt_service.setup_functions)
+[0m20:27:13.478811 [debug] [Thread-3 (]: Began compiling node model.dbt_service.data_overview
+[0m20:27:13.478958 [debug] [Thread-6 (]: Began compiling node model.dbt_service.setup_functions
+[0m20:27:13.480875 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_service.data_overview"
+[0m20:27:13.481984 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_service.setup_functions"
+[0m20:27:13.482738 [debug] [Thread-3 (]: Began executing node model.dbt_service.data_overview
+[0m20:27:13.482943 [debug] [Thread-6 (]: Began executing node model.dbt_service.setup_functions
+[0m20:27:13.483257 [debug] [Thread-3 (]: Finished running node model.dbt_service.data_overview
+[0m20:27:13.483520 [debug] [Thread-6 (]: Finished running node model.dbt_service.setup_functions
+[0m20:27:13.484481 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:27:13.484612 [debug] [MainThread]: Connection 'model.dbt_service.prospect_matching_ratio' was properly closed.
+[0m20:27:13.484720 [debug] [MainThread]: Connection 'model.dbt_service.stg_entity_clusters' was properly closed.
+[0m20:27:13.484822 [debug] [MainThread]: Connection 'model.dbt_service.data_overview' was properly closed.
+[0m20:27:13.484922 [debug] [MainThread]: Connection 'list_finny_db_public_staging_analysis' was properly closed.
+[0m20:27:13.485021 [debug] [MainThread]: Connection 'model.dbt_service.stg_pdl_data' was properly closed.
+[0m20:27:13.485120 [debug] [MainThread]: Connection 'model.dbt_service.setup_functions' was properly closed.
+[0m20:27:13.485223 [debug] [MainThread]: Connection 'test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df' was properly closed.
+[0m20:27:13.485328 [debug] [MainThread]: Connection 'test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda' was properly closed.
+[0m20:27:13.485426 [debug] [MainThread]: Connection 'model.dbt_service.raw_company_profiling' was properly closed.
+[0m20:27:13.485524 [debug] [MainThread]: Connection 'model.dbt_service.raw_data_profiling' was properly closed.
+[0m20:27:13.485628 [debug] [MainThread]: Connection 'model.dbt_service.raw_location_profiling' was properly closed.
+[0m20:27:13.485727 [debug] [MainThread]: Connection 'model.dbt_service.stg_fxf_data' was properly closed.
+[0m20:27:13.485823 [debug] [MainThread]: Connection 'test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25' was properly closed.
+[0m20:27:13.485917 [debug] [MainThread]: Connection 'test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66' was properly closed.
+[0m20:27:13.486016 [debug] [MainThread]: Connection 'test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7' was properly closed.
+[0m20:27:13.486115 [debug] [MainThread]: Connection 'test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa' was properly closed.
+[0m20:27:13.486210 [debug] [MainThread]: Connection 'model.dbt_service.company_analysis' was properly closed.
+[0m20:27:13.486304 [debug] [MainThread]: Connection 'model.dbt_service.staging_city_state_profiling' was properly closed.
+[0m20:27:13.486405 [debug] [MainThread]: Connection 'model.dbt_service.staging_company_profiling' was properly closed.
+[0m20:27:13.486501 [debug] [MainThread]: Connection 'model.dbt_service.staging_data_profiling' was properly closed.
+[0m20:27:13.486601 [debug] [MainThread]: Connection 'model.dbt_service.staging_location_profiling' was properly closed.
+[0m20:27:13.486697 [debug] [MainThread]: Connection 'model.dbt_service.stg_unified_prospects' was properly closed.
+[0m20:27:13.486795 [debug] [MainThread]: Connection 'test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1' was properly closed.
+[0m20:27:13.486890 [debug] [MainThread]: Connection 'test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe' was properly closed.
+[0m20:27:13.486990 [debug] [MainThread]: Connection 'test.dbt_service.not_null_company_analysis_company.b4c562fde2' was properly closed.
+[0m20:27:13.487089 [debug] [MainThread]: Connection 'test.dbt_service.unique_company_analysis_company.2a96b2dba1' was properly closed.
+[0m20:27:13.487186 [debug] [MainThread]: Connection 'model.dbt_service.stg_prospect_matches' was properly closed.
+[0m20:27:13.488765 [debug] [MainThread]: Command end result
+[0m20:27:13.532114 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/finny/dbt_service/target/manifest.json
+[0m20:27:13.533450 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/finny/dbt_service/target/semantic_manifest.json
+[0m20:27:13.536716 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mahmoud/Workspace/finny/dbt_service/target/run_results.json
+[0m20:27:13.538397 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m20:27:13.538529 [info ] [MainThread]: Building catalog
+[0m20:27:13.542892 [debug] [ThreadPool]: Acquiring new postgres connection 'finny_db.information_schema'
+[0m20:27:13.546078 [debug] [ThreadPool]: Using postgres connection "finny_db.information_schema"
+[0m20:27:13.546217 [debug] [ThreadPool]: On finny_db.information_schema: BEGIN
+[0m20:27:13.546323 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:13.557933 [debug] [ThreadPool]: SQL status: BEGIN in 0.012 seconds
+[0m20:27:13.558227 [debug] [ThreadPool]: Using postgres connection "finny_db.information_schema"
+[0m20:27:13.558537 [debug] [ThreadPool]: On finny_db.information_schema: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "finny_db.information_schema"} */
+
+    
+    
+
+    select
+        'finny_db' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('company_analysis')) or (upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('staging_city_state_profiling')) or (upper(sch.nspname) = upper('public_raw_analysis') and
+           upper(tbl.relname) = upper('raw_company_profiling')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_fxf_data')) or (upper(sch.nspname) = upper('public_marts') and
+           upper(tbl.relname) = upper('data_overview')) or (upper(sch.nspname) = upper('public_raw_analysis') and
+           upper(tbl.relname) = upper('raw_location_profiling')) or (upper(sch.nspname) = upper('public_marts') and
+           upper(tbl.relname) = upper('prospect_matching_ratio')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_unified_prospects')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_entity_clusters')) or (upper(sch.nspname) = upper('public_raw') and
+           upper(tbl.relname) = upper('raw_pdl_data')) or (upper(sch.nspname) = upper('public_raw_analysis') and
+           upper(tbl.relname) = upper('raw_data_profiling')) or (upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('staging_company_profiling')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('pdl_data')) or (upper(sch.nspname) = upper('public_raw') and
+           upper(tbl.relname) = upper('raw_fxf_data')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_prospect_matches')) or (upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('staging_data_profiling')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_pdl_data')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('setup_functions')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('fxf_data')) or (upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('staging_location_profiling')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('state_iso_mapping')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m20:27:13.566771 [debug] [ThreadPool]: SQL status: SELECT 221 in 0.008 seconds
+[0m20:27:13.570358 [debug] [ThreadPool]: On finny_db.information_schema: ROLLBACK
+[0m20:27:13.570941 [debug] [ThreadPool]: On finny_db.information_schema: Close
+[0m20:27:13.581343 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/mahmoud/Workspace/finny/dbt_service/target/catalog.json
+[0m20:27:13.593681 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/finny/dbt_service/target/manifest.json
+[0m20:27:13.594730 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/finny/dbt_service/target/semantic_manifest.json
+[0m20:27:13.594868 [info ] [MainThread]: Catalog written to /Users/mahmoud/Workspace/finny/dbt_service/target/catalog.json
+[0m20:27:13.597096 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.7196255, "process_in_blocks": "0", "process_kernel_time": 0.24847, "process_mem_max_rss": "138772480", "process_out_blocks": "0", "process_user_time": 1.098606}
+[0m20:27:13.597340 [debug] [MainThread]: Command `dbt docs generate` succeeded at 20:27:13.597305 after 0.72 seconds
+[0m20:27:13.597479 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m20:27:13.597580 [debug] [MainThread]: Connection 'finny_db.information_schema' was properly closed.
+[0m20:27:13.597708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10286a990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a83cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1026bb750>]}
+[0m20:27:13.597879 [debug] [MainThread]: Flushing usage events
+[0m20:27:13.997794 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:27:35.933577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a719550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad9b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b022210>]}
+
+
+============================== 20:27:35.935628 | e1ef99ff-b327-472a-b1d8-e3783eec0ab1 ==============================
+[0m20:27:35.935628 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:27:35.935912 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'dbt_service/logs', 'partial_parse': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'empty': 'None', 'printer_width': '80', 'indirect_selection': 'eager', 'quiet': 'False', 'no_print': 'None', 'target_path': 'None', 'write_json': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt docs generate --project-dir dbt_service --profiles-dir dbt_service', 'warn_error': 'None', 'log_format': 'default', 'profiles_dir': 'dbt_service'}
+[0m20:27:36.024673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e1ef99ff-b327-472a-b1d8-e3783eec0ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b08a9d0>]}
+[0m20:27:36.054326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e1ef99ff-b327-472a-b1d8-e3783eec0ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd97750>]}
+[0m20:27:36.055116 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m20:27:36.100248 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m20:27:36.164556 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:27:36.164778 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:27:36.188382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e1ef99ff-b327-472a-b1d8-e3783eec0ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd76810>]}
+[0m20:27:36.199820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e1ef99ff-b327-472a-b1d8-e3783eec0ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10befc910>]}
+[0m20:27:36.200056 [info ] [MainThread]: Found 18 models, 3 seeds, 11 data tests, 2 sources, 453 macros
+[0m20:27:36.200222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1ef99ff-b327-472a-b1d8-e3783eec0ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1eba10>]}
+[0m20:27:36.201379 [info ] [MainThread]: 
+[0m20:27:36.201551 [info ] [MainThread]: Concurrency: 32 threads (target='dev')
+[0m20:27:36.201674 [info ] [MainThread]: 
+[0m20:27:36.201892 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m20:27:36.203809 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_raw'
+[0m20:27:36.204020 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_raw_analysis'
+[0m20:27:36.204242 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_marts'
+[0m20:27:36.209948 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_staging_analysis'
+[0m20:27:36.210373 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public_staging'
+[0m20:27:36.211440 [debug] [ThreadPool]: Acquiring new postgres connection 'list_finny_db_public'
+[0m20:27:36.263028 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_raw"
+[0m20:27:36.263290 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_raw_analysis"
+[0m20:27:36.263467 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_marts"
+[0m20:27:36.263638 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_staging_analysis"
+[0m20:27:36.263778 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_staging"
+[0m20:27:36.263946 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public"
+[0m20:27:36.264151 [debug] [ThreadPool]: On list_finny_db_public_raw: BEGIN
+[0m20:27:36.264297 [debug] [ThreadPool]: On list_finny_db_public_raw_analysis: BEGIN
+[0m20:27:36.264438 [debug] [ThreadPool]: On list_finny_db_public_marts: BEGIN
+[0m20:27:36.264571 [debug] [ThreadPool]: On list_finny_db_public_staging_analysis: BEGIN
+[0m20:27:36.264693 [debug] [ThreadPool]: On list_finny_db_public_staging: BEGIN
+[0m20:27:36.264831 [debug] [ThreadPool]: On list_finny_db_public: BEGIN
+[0m20:27:36.264969 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:36.265095 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:36.265214 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:36.265332 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:36.265450 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:36.265570 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:36.299443 [debug] [ThreadPool]: SQL status: BEGIN in 0.034 seconds
+[0m20:27:36.299643 [debug] [ThreadPool]: SQL status: BEGIN in 0.034 seconds
+[0m20:27:36.299763 [debug] [ThreadPool]: SQL status: BEGIN in 0.035 seconds
+[0m20:27:36.299872 [debug] [ThreadPool]: SQL status: BEGIN in 0.034 seconds
+[0m20:27:36.300006 [debug] [ThreadPool]: SQL status: BEGIN in 0.035 seconds
+[0m20:27:36.300132 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_staging_analysis"
+[0m20:27:36.300235 [debug] [ThreadPool]: SQL status: BEGIN in 0.035 seconds
+[0m20:27:36.300361 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public"
+[0m20:27:36.300469 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_raw_analysis"
+[0m20:27:36.300575 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_staging"
+[0m20:27:36.300679 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_marts"
+[0m20:27:36.300810 [debug] [ThreadPool]: On list_finny_db_public_staging_analysis: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_staging_analysis"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging_analysis'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging_analysis'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging_analysis'
+  
+[0m20:27:36.300936 [debug] [ThreadPool]: Using postgres connection "list_finny_db_public_raw"
+[0m20:27:36.301059 [debug] [ThreadPool]: On list_finny_db_public: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m20:27:36.301196 [debug] [ThreadPool]: On list_finny_db_public_raw_analysis: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_raw_analysis"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_raw_analysis'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_raw_analysis'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_raw_analysis'
+  
+[0m20:27:36.301332 [debug] [ThreadPool]: On list_finny_db_public_staging: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_staging"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m20:27:36.301469 [debug] [ThreadPool]: On list_finny_db_public_marts: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_marts"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m20:27:36.301657 [debug] [ThreadPool]: On list_finny_db_public_raw: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "list_finny_db_public_raw"} */
+select
+      'finny_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_raw'
+    union all
+    select
+      'finny_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_raw'
+    union all
+    select
+      'finny_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_raw'
+  
+[0m20:27:36.308086 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.006 seconds
+[0m20:27:36.308291 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.006 seconds
+[0m20:27:36.308476 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.007 seconds
+[0m20:27:36.308664 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.007 seconds
+[0m20:27:36.308804 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.007 seconds
+[0m20:27:36.309345 [debug] [ThreadPool]: On list_finny_db_public_staging_analysis: ROLLBACK
+[0m20:27:36.309462 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.008 seconds
+[0m20:27:36.309890 [debug] [ThreadPool]: On list_finny_db_public_raw_analysis: ROLLBACK
+[0m20:27:36.310262 [debug] [ThreadPool]: On list_finny_db_public_raw: ROLLBACK
+[0m20:27:36.310675 [debug] [ThreadPool]: On list_finny_db_public: ROLLBACK
+[0m20:27:36.311055 [debug] [ThreadPool]: On list_finny_db_public_staging: ROLLBACK
+[0m20:27:36.311850 [debug] [ThreadPool]: On list_finny_db_public_marts: ROLLBACK
+[0m20:27:36.312064 [debug] [ThreadPool]: On list_finny_db_public_staging_analysis: Close
+[0m20:27:36.312568 [debug] [ThreadPool]: On list_finny_db_public_raw: Close
+[0m20:27:36.313108 [debug] [ThreadPool]: On list_finny_db_public: Close
+[0m20:27:36.313271 [debug] [ThreadPool]: On list_finny_db_public_staging: Close
+[0m20:27:36.313422 [debug] [ThreadPool]: On list_finny_db_public_marts: Close
+[0m20:27:36.313599 [debug] [ThreadPool]: On list_finny_db_public_raw_analysis: Close
+[0m20:27:36.318547 [debug] [MainThread]: Using postgres connection "master"
+[0m20:27:36.318811 [debug] [MainThread]: On master: BEGIN
+[0m20:27:36.318958 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:27:36.331848 [debug] [MainThread]: SQL status: BEGIN in 0.013 seconds
+[0m20:27:36.332113 [debug] [MainThread]: Using postgres connection "master"
+[0m20:27:36.332351 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m20:27:36.345495 [debug] [MainThread]: SQL status: SELECT 11 in 0.013 seconds
+[0m20:27:36.346939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1ef99ff-b327-472a-b1d8-e3783eec0ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c815010>]}
+[0m20:27:36.347175 [debug] [MainThread]: On master: ROLLBACK
+[0m20:27:36.347644 [debug] [MainThread]: On master: Close
+[0m20:27:36.354597 [debug] [Thread-1 (]: Began running node seed.dbt_service.fxf_data
+[0m20:27:36.354954 [debug] [Thread-2 (]: Began running node seed.dbt_service.pdl_data
+[0m20:27:36.355163 [debug] [Thread-3 (]: Began running node seed.dbt_service.state_iso_mapping
+[0m20:27:36.355556 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_finny_db_public_raw, now seed.dbt_service.fxf_data)
+[0m20:27:36.355886 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_finny_db_public_raw_analysis, now seed.dbt_service.pdl_data)
+[0m20:27:36.356158 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_finny_db_public_marts, now seed.dbt_service.state_iso_mapping)
+[0m20:27:36.356379 [debug] [Thread-1 (]: Began compiling node seed.dbt_service.fxf_data
+[0m20:27:36.356570 [debug] [Thread-2 (]: Began compiling node seed.dbt_service.pdl_data
+[0m20:27:36.356781 [debug] [Thread-3 (]: Began compiling node seed.dbt_service.state_iso_mapping
+[0m20:27:36.359607 [debug] [Thread-1 (]: Began executing node seed.dbt_service.fxf_data
+[0m20:27:36.360638 [debug] [Thread-2 (]: Began executing node seed.dbt_service.pdl_data
+[0m20:27:36.361475 [debug] [Thread-3 (]: Began executing node seed.dbt_service.state_iso_mapping
+[0m20:27:36.361793 [debug] [Thread-1 (]: Finished running node seed.dbt_service.fxf_data
+[0m20:27:36.362020 [debug] [Thread-2 (]: Finished running node seed.dbt_service.pdl_data
+[0m20:27:36.362245 [debug] [Thread-3 (]: Finished running node seed.dbt_service.state_iso_mapping
+[0m20:27:36.362769 [debug] [Thread-5 (]: Began running node model.dbt_service.raw_fxf_data
+[0m20:27:36.363243 [debug] [Thread-7 (]: Began running node model.dbt_service.raw_pdl_data
+[0m20:27:36.363499 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly list_finny_db_public_staging, now model.dbt_service.raw_fxf_data)
+[0m20:27:36.363745 [debug] [Thread-7 (]: Acquiring new postgres connection 'model.dbt_service.raw_pdl_data'
+[0m20:27:36.363911 [debug] [Thread-5 (]: Began compiling node model.dbt_service.raw_fxf_data
+[0m20:27:36.364060 [debug] [Thread-7 (]: Began compiling node model.dbt_service.raw_pdl_data
+[0m20:27:36.365839 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_service.raw_fxf_data"
+[0m20:27:36.367026 [debug] [Thread-7 (]: Writing injected SQL for node "model.dbt_service.raw_pdl_data"
+[0m20:27:36.367511 [debug] [Thread-7 (]: Began executing node model.dbt_service.raw_pdl_data
+[0m20:27:36.367714 [debug] [Thread-5 (]: Began executing node model.dbt_service.raw_fxf_data
+[0m20:27:36.368087 [debug] [Thread-7 (]: Finished running node model.dbt_service.raw_pdl_data
+[0m20:27:36.368356 [debug] [Thread-5 (]: Finished running node model.dbt_service.raw_fxf_data
+[0m20:27:36.368693 [debug] [Thread-9 (]: Began running node model.dbt_service.stg_pdl_data
+[0m20:27:36.368858 [debug] [Thread-5 (]: Began running node test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df
+[0m20:27:36.369015 [debug] [Thread-10 ]: Began running node test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda
+[0m20:27:36.369328 [debug] [Thread-9 (]: Acquiring new postgres connection 'model.dbt_service.stg_pdl_data'
+[0m20:27:36.369485 [debug] [Thread-12 ]: Began running node model.dbt_service.raw_company_profiling
+[0m20:27:36.369650 [debug] [Thread-13 ]: Began running node model.dbt_service.raw_data_profiling
+[0m20:27:36.369800 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_service.raw_fxf_data, now test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df)
+[0m20:27:36.369956 [debug] [Thread-14 ]: Began running node model.dbt_service.raw_location_profiling
+[0m20:27:36.370117 [debug] [Thread-15 ]: Began running node model.dbt_service.stg_fxf_data
+[0m20:27:36.370369 [debug] [Thread-16 ]: Began running node test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed
+[0m20:27:36.370514 [debug] [Thread-17 ]: Began running node test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66
+[0m20:27:36.370707 [debug] [Thread-10 ]: Acquiring new postgres connection 'test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda'
+[0m20:27:36.370860 [debug] [Thread-9 (]: Began compiling node model.dbt_service.stg_pdl_data
+[0m20:27:36.371054 [debug] [Thread-12 ]: Acquiring new postgres connection 'model.dbt_service.raw_company_profiling'
+[0m20:27:36.371241 [debug] [Thread-13 ]: Acquiring new postgres connection 'model.dbt_service.raw_data_profiling'
+[0m20:27:36.371376 [debug] [Thread-5 (]: Began compiling node test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df
+[0m20:27:36.371561 [debug] [Thread-14 ]: Acquiring new postgres connection 'model.dbt_service.raw_location_profiling'
+[0m20:27:36.371774 [debug] [Thread-15 ]: Acquiring new postgres connection 'model.dbt_service.stg_fxf_data'
+[0m20:27:36.371958 [debug] [Thread-16 ]: Acquiring new postgres connection 'test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed'
+[0m20:27:36.372130 [debug] [Thread-17 ]: Acquiring new postgres connection 'test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66'
+[0m20:27:36.372319 [debug] [Thread-10 ]: Began compiling node test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda
+[0m20:27:36.373665 [debug] [Thread-9 (]: Writing injected SQL for node "model.dbt_service.stg_pdl_data"
+[0m20:27:36.373844 [debug] [Thread-12 ]: Began compiling node model.dbt_service.raw_company_profiling
+[0m20:27:36.374019 [debug] [Thread-13 ]: Began compiling node model.dbt_service.raw_data_profiling
+[0m20:27:36.379686 [debug] [Thread-5 (]: Writing injected SQL for node "test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df"
+[0m20:27:36.379917 [debug] [Thread-14 ]: Began compiling node model.dbt_service.raw_location_profiling
+[0m20:27:36.380084 [debug] [Thread-15 ]: Began compiling node model.dbt_service.stg_fxf_data
+[0m20:27:36.380221 [debug] [Thread-16 ]: Began compiling node test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed
+[0m20:27:36.380361 [debug] [Thread-17 ]: Began compiling node test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66
+[0m20:27:36.382868 [debug] [Thread-10 ]: Writing injected SQL for node "test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda"
+[0m20:27:36.384262 [debug] [Thread-12 ]: Writing injected SQL for node "model.dbt_service.raw_company_profiling"
+[0m20:27:36.385492 [debug] [Thread-13 ]: Writing injected SQL for node "model.dbt_service.raw_data_profiling"
+[0m20:27:36.385734 [debug] [Thread-9 (]: Began executing node model.dbt_service.stg_pdl_data
+[0m20:27:36.387320 [debug] [Thread-14 ]: Writing injected SQL for node "model.dbt_service.raw_location_profiling"
+[0m20:27:36.388641 [debug] [Thread-15 ]: Writing injected SQL for node "model.dbt_service.stg_fxf_data"
+[0m20:27:36.388800 [debug] [Thread-5 (]: Began executing node test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df
+[0m20:27:36.390175 [debug] [Thread-16 ]: Writing injected SQL for node "test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed"
+[0m20:27:36.391523 [debug] [Thread-17 ]: Writing injected SQL for node "test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66"
+[0m20:27:36.391973 [debug] [Thread-9 (]: Finished running node model.dbt_service.stg_pdl_data
+[0m20:27:36.392126 [debug] [Thread-10 ]: Began executing node test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda
+[0m20:27:36.392320 [debug] [Thread-13 ]: Began executing node model.dbt_service.raw_data_profiling
+[0m20:27:36.392460 [debug] [Thread-12 ]: Began executing node model.dbt_service.raw_company_profiling
+[0m20:27:36.392761 [debug] [Thread-5 (]: Finished running node test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df
+[0m20:27:36.392989 [debug] [Thread-14 ]: Began executing node model.dbt_service.raw_location_profiling
+[0m20:27:36.393141 [debug] [Thread-15 ]: Began executing node model.dbt_service.stg_fxf_data
+[0m20:27:36.393447 [debug] [Thread-16 ]: Began executing node test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed
+[0m20:27:36.393615 [debug] [Thread-19 ]: Began running node test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7
+[0m20:27:36.393863 [debug] [Thread-10 ]: Finished running node test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda
+[0m20:27:36.394005 [debug] [Thread-20 ]: Began running node test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa
+[0m20:27:36.394149 [debug] [Thread-17 ]: Began executing node test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66
+[0m20:27:36.394391 [debug] [Thread-13 ]: Finished running node model.dbt_service.raw_data_profiling
+[0m20:27:36.394630 [debug] [Thread-12 ]: Finished running node model.dbt_service.raw_company_profiling
+[0m20:27:36.394904 [debug] [Thread-14 ]: Finished running node model.dbt_service.raw_location_profiling
+[0m20:27:36.395199 [debug] [Thread-15 ]: Finished running node model.dbt_service.stg_fxf_data
+[0m20:27:36.395445 [debug] [Thread-16 ]: Finished running node test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed
+[0m20:27:36.395639 [debug] [Thread-19 ]: Acquiring new postgres connection 'test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7'
+[0m20:27:36.395861 [debug] [Thread-20 ]: Acquiring new postgres connection 'test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa'
+[0m20:27:36.396098 [debug] [Thread-17 ]: Finished running node test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66
+[0m20:27:36.396459 [debug] [Thread-22 ]: Began running node model.dbt_service.company_analysis
+[0m20:27:36.396606 [debug] [Thread-19 ]: Began compiling node test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7
+[0m20:27:36.396756 [debug] [Thread-23 ]: Began running node model.dbt_service.staging_city_state_profiling
+[0m20:27:36.396918 [debug] [Thread-24 ]: Began running node model.dbt_service.staging_company_profiling
+[0m20:27:36.397044 [debug] [Thread-20 ]: Began compiling node test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa
+[0m20:27:36.397187 [debug] [Thread-25 ]: Began running node model.dbt_service.staging_data_profiling
+[0m20:27:36.397347 [debug] [Thread-26 ]: Began running node model.dbt_service.staging_location_profiling
+[0m20:27:36.397498 [debug] [Thread-17 ]: Began running node model.dbt_service.stg_unified_prospects
+[0m20:27:36.397630 [debug] [Thread-27 ]: Began running node test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1
+[0m20:27:36.397779 [debug] [Thread-28 ]: Began running node test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe
+[0m20:27:36.397927 [debug] [Thread-29 ]: Began running node test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25
+[0m20:27:36.398102 [debug] [Thread-22 ]: Acquiring new postgres connection 'model.dbt_service.company_analysis'
+[0m20:27:36.399493 [debug] [Thread-19 ]: Writing injected SQL for node "test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7"
+[0m20:27:36.399687 [debug] [Thread-23 ]: Acquiring new postgres connection 'model.dbt_service.staging_city_state_profiling'
+[0m20:27:36.399873 [debug] [Thread-24 ]: Acquiring new postgres connection 'model.dbt_service.staging_company_profiling'
+[0m20:27:36.401155 [debug] [Thread-20 ]: Writing injected SQL for node "test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa"
+[0m20:27:36.401338 [debug] [Thread-25 ]: Acquiring new postgres connection 'model.dbt_service.staging_data_profiling'
+[0m20:27:36.401524 [debug] [Thread-26 ]: Acquiring new postgres connection 'model.dbt_service.staging_location_profiling'
+[0m20:27:36.401684 [debug] [Thread-17 ]: Re-using an available connection from the pool (formerly test.dbt_service.unique_raw_fxf_data_fxf_id.db3ff52e66, now model.dbt_service.stg_unified_prospects)
+[0m20:27:36.401925 [debug] [Thread-27 ]: Acquiring new postgres connection 'test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1'
+[0m20:27:36.402113 [debug] [Thread-28 ]: Acquiring new postgres connection 'test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe'
+[0m20:27:36.402293 [debug] [Thread-29 ]: Acquiring new postgres connection 'test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25'
+[0m20:27:36.402446 [debug] [Thread-22 ]: Began compiling node model.dbt_service.company_analysis
+[0m20:27:36.402632 [debug] [Thread-23 ]: Began compiling node model.dbt_service.staging_city_state_profiling
+[0m20:27:36.402787 [debug] [Thread-24 ]: Began compiling node model.dbt_service.staging_company_profiling
+[0m20:27:36.402973 [debug] [Thread-25 ]: Began compiling node model.dbt_service.staging_data_profiling
+[0m20:27:36.403108 [debug] [Thread-19 ]: Began executing node test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7
+[0m20:27:36.403268 [debug] [Thread-26 ]: Began compiling node model.dbt_service.staging_location_profiling
+[0m20:27:36.403420 [debug] [Thread-17 ]: Began compiling node model.dbt_service.stg_unified_prospects
+[0m20:27:36.403546 [debug] [Thread-20 ]: Began executing node test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa
+[0m20:27:36.403684 [debug] [Thread-27 ]: Began compiling node test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1
+[0m20:27:36.403824 [debug] [Thread-28 ]: Began compiling node test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe
+[0m20:27:36.403959 [debug] [Thread-29 ]: Began compiling node test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25
+[0m20:27:36.406131 [debug] [Thread-22 ]: Writing injected SQL for node "model.dbt_service.company_analysis"
+[0m20:27:36.407344 [debug] [Thread-23 ]: Writing injected SQL for node "model.dbt_service.staging_city_state_profiling"
+[0m20:27:36.408683 [debug] [Thread-24 ]: Writing injected SQL for node "model.dbt_service.staging_company_profiling"
+[0m20:27:36.409982 [debug] [Thread-25 ]: Writing injected SQL for node "model.dbt_service.staging_data_profiling"
+[0m20:27:36.410242 [debug] [Thread-19 ]: Finished running node test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7
+[0m20:27:36.411683 [debug] [Thread-26 ]: Writing injected SQL for node "model.dbt_service.staging_location_profiling"
+[0m20:27:36.412849 [debug] [Thread-17 ]: Writing injected SQL for node "model.dbt_service.stg_unified_prospects"
+[0m20:27:36.413096 [debug] [Thread-20 ]: Finished running node test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa
+[0m20:27:36.414442 [debug] [Thread-27 ]: Writing injected SQL for node "test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1"
+[0m20:27:36.415757 [debug] [Thread-28 ]: Writing injected SQL for node "test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe"
+[0m20:27:36.417194 [debug] [Thread-29 ]: Writing injected SQL for node "test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25"
+[0m20:27:36.417601 [debug] [Thread-23 ]: Began executing node model.dbt_service.staging_city_state_profiling
+[0m20:27:36.417731 [debug] [Thread-24 ]: Began executing node model.dbt_service.staging_company_profiling
+[0m20:27:36.417899 [debug] [Thread-22 ]: Began executing node model.dbt_service.company_analysis
+[0m20:27:36.418111 [debug] [Thread-25 ]: Began executing node model.dbt_service.staging_data_profiling
+[0m20:27:36.418370 [debug] [Thread-26 ]: Began executing node model.dbt_service.staging_location_profiling
+[0m20:27:36.418719 [debug] [Thread-23 ]: Finished running node model.dbt_service.staging_city_state_profiling
+[0m20:27:36.418987 [debug] [Thread-24 ]: Finished running node model.dbt_service.staging_company_profiling
+[0m20:27:36.419178 [debug] [Thread-17 ]: Began executing node model.dbt_service.stg_unified_prospects
+[0m20:27:36.419321 [debug] [Thread-28 ]: Began executing node test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe
+[0m20:27:36.419448 [debug] [Thread-27 ]: Began executing node test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1
+[0m20:27:36.419577 [debug] [Thread-29 ]: Began executing node test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25
+[0m20:27:36.419783 [debug] [Thread-22 ]: Finished running node model.dbt_service.company_analysis
+[0m20:27:36.419992 [debug] [Thread-25 ]: Finished running node model.dbt_service.staging_data_profiling
+[0m20:27:36.420219 [debug] [Thread-26 ]: Finished running node model.dbt_service.staging_location_profiling
+[0m20:27:36.420530 [debug] [Thread-17 ]: Finished running node model.dbt_service.stg_unified_prospects
+[0m20:27:36.420749 [debug] [Thread-28 ]: Finished running node test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe
+[0m20:27:36.420997 [debug] [Thread-27 ]: Finished running node test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1
+[0m20:27:36.421242 [debug] [Thread-29 ]: Finished running node test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25
+[0m20:27:36.421470 [debug] [Thread-31 ]: Began running node test.dbt_service.not_null_company_analysis_company.b4c562fde2
+[0m20:27:36.421618 [debug] [Thread-32 ]: Began running node test.dbt_service.unique_company_analysis_company.2a96b2dba1
+[0m20:27:36.421905 [debug] [Thread-1 (]: Began running node model.dbt_service.stg_prospect_matches
+[0m20:27:36.422159 [debug] [Thread-31 ]: Acquiring new postgres connection 'test.dbt_service.not_null_company_analysis_company.b4c562fde2'
+[0m20:27:36.422341 [debug] [Thread-32 ]: Acquiring new postgres connection 'test.dbt_service.unique_company_analysis_company.2a96b2dba1'
+[0m20:27:36.422496 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_service.fxf_data, now model.dbt_service.stg_prospect_matches)
+[0m20:27:36.422646 [debug] [Thread-31 ]: Began compiling node test.dbt_service.not_null_company_analysis_company.b4c562fde2
+[0m20:27:36.422793 [debug] [Thread-32 ]: Began compiling node test.dbt_service.unique_company_analysis_company.2a96b2dba1
+[0m20:27:36.422976 [debug] [Thread-1 (]: Began compiling node model.dbt_service.stg_prospect_matches
+[0m20:27:36.424410 [debug] [Thread-31 ]: Writing injected SQL for node "test.dbt_service.not_null_company_analysis_company.b4c562fde2"
+[0m20:27:36.425664 [debug] [Thread-32 ]: Writing injected SQL for node "test.dbt_service.unique_company_analysis_company.2a96b2dba1"
+[0m20:27:36.428985 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_service.stg_prospect_matches"
+[0m20:27:36.429322 [debug] [Thread-32 ]: Began executing node test.dbt_service.unique_company_analysis_company.2a96b2dba1
+[0m20:27:36.429474 [debug] [Thread-31 ]: Began executing node test.dbt_service.not_null_company_analysis_company.b4c562fde2
+[0m20:27:36.429607 [debug] [Thread-1 (]: Began executing node model.dbt_service.stg_prospect_matches
+[0m20:27:36.429910 [debug] [Thread-32 ]: Finished running node test.dbt_service.unique_company_analysis_company.2a96b2dba1
+[0m20:27:36.430148 [debug] [Thread-31 ]: Finished running node test.dbt_service.not_null_company_analysis_company.b4c562fde2
+[0m20:27:36.430350 [debug] [Thread-1 (]: Finished running node model.dbt_service.stg_prospect_matches
+[0m20:27:36.430740 [debug] [Thread-2 (]: Began running node model.dbt_service.prospect_matching_ratio
+[0m20:27:36.430892 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_service.pdl_data, now model.dbt_service.prospect_matching_ratio)
+[0m20:27:36.431070 [debug] [Thread-3 (]: Began running node model.dbt_service.stg_entity_clusters
+[0m20:27:36.431212 [debug] [Thread-2 (]: Began compiling node model.dbt_service.prospect_matching_ratio
+[0m20:27:36.431353 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.dbt_service.state_iso_mapping, now model.dbt_service.stg_entity_clusters)
+[0m20:27:36.433455 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_service.prospect_matching_ratio"
+[0m20:27:36.433610 [debug] [Thread-3 (]: Began compiling node model.dbt_service.stg_entity_clusters
+[0m20:27:36.434643 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_service.stg_entity_clusters"
+[0m20:27:36.434869 [debug] [Thread-2 (]: Began executing node model.dbt_service.prospect_matching_ratio
+[0m20:27:36.435126 [debug] [Thread-2 (]: Finished running node model.dbt_service.prospect_matching_ratio
+[0m20:27:36.435281 [debug] [Thread-3 (]: Began executing node model.dbt_service.stg_entity_clusters
+[0m20:27:36.435538 [debug] [Thread-3 (]: Finished running node model.dbt_service.stg_entity_clusters
+[0m20:27:36.435797 [debug] [Thread-7 (]: Began running node model.dbt_service.data_overview
+[0m20:27:36.435947 [debug] [Thread-11 ]: Began running node model.dbt_service.setup_functions
+[0m20:27:36.436115 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.dbt_service.raw_pdl_data, now model.dbt_service.data_overview)
+[0m20:27:36.436300 [debug] [Thread-11 ]: Acquiring new postgres connection 'model.dbt_service.setup_functions'
+[0m20:27:36.436433 [debug] [Thread-7 (]: Began compiling node model.dbt_service.data_overview
+[0m20:27:36.436560 [debug] [Thread-11 ]: Began compiling node model.dbt_service.setup_functions
+[0m20:27:36.437925 [debug] [Thread-7 (]: Writing injected SQL for node "model.dbt_service.data_overview"
+[0m20:27:36.438883 [debug] [Thread-11 ]: Writing injected SQL for node "model.dbt_service.setup_functions"
+[0m20:27:36.439166 [debug] [Thread-7 (]: Began executing node model.dbt_service.data_overview
+[0m20:27:36.439425 [debug] [Thread-7 (]: Finished running node model.dbt_service.data_overview
+[0m20:27:36.439570 [debug] [Thread-11 ]: Began executing node model.dbt_service.setup_functions
+[0m20:27:36.439849 [debug] [Thread-11 ]: Finished running node model.dbt_service.setup_functions
+[0m20:27:36.440696 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:27:36.440819 [debug] [MainThread]: Connection 'model.dbt_service.stg_prospect_matches' was properly closed.
+[0m20:27:36.440915 [debug] [MainThread]: Connection 'model.dbt_service.prospect_matching_ratio' was properly closed.
+[0m20:27:36.441006 [debug] [MainThread]: Connection 'model.dbt_service.stg_entity_clusters' was properly closed.
+[0m20:27:36.441094 [debug] [MainThread]: Connection 'list_finny_db_public_staging_analysis' was properly closed.
+[0m20:27:36.441181 [debug] [MainThread]: Connection 'test.dbt_service.not_null_raw_pdl_data_pdl_id.b8ed29d8df' was properly closed.
+[0m20:27:36.441270 [debug] [MainThread]: Connection 'list_finny_db_public' was properly closed.
+[0m20:27:36.441359 [debug] [MainThread]: Connection 'model.dbt_service.data_overview' was properly closed.
+[0m20:27:36.441466 [debug] [MainThread]: Connection 'model.dbt_service.stg_pdl_data' was properly closed.
+[0m20:27:36.441568 [debug] [MainThread]: Connection 'test.dbt_service.unique_raw_pdl_data_pdl_id.c28d33aeda' was properly closed.
+[0m20:27:36.441666 [debug] [MainThread]: Connection 'model.dbt_service.raw_company_profiling' was properly closed.
+[0m20:27:36.441765 [debug] [MainThread]: Connection 'model.dbt_service.raw_data_profiling' was properly closed.
+[0m20:27:36.441861 [debug] [MainThread]: Connection 'model.dbt_service.raw_location_profiling' was properly closed.
+[0m20:27:36.441961 [debug] [MainThread]: Connection 'model.dbt_service.stg_fxf_data' was properly closed.
+[0m20:27:36.442060 [debug] [MainThread]: Connection 'test.dbt_service.not_null_raw_fxf_data_fxf_id.a66d87cfed' was properly closed.
+[0m20:27:36.442157 [debug] [MainThread]: Connection 'model.dbt_service.stg_unified_prospects' was properly closed.
+[0m20:27:36.442249 [debug] [MainThread]: Connection 'test.dbt_service.not_null_stg_pdl_data_pdl_id.b9ad9908b7' was properly closed.
+[0m20:27:36.442342 [debug] [MainThread]: Connection 'test.dbt_service.unique_stg_pdl_data_pdl_id.0d192d34aa' was properly closed.
+[0m20:27:36.442435 [debug] [MainThread]: Connection 'model.dbt_service.company_analysis' was properly closed.
+[0m20:27:36.442531 [debug] [MainThread]: Connection 'model.dbt_service.staging_city_state_profiling' was properly closed.
+[0m20:27:36.442625 [debug] [MainThread]: Connection 'model.dbt_service.staging_company_profiling' was properly closed.
+[0m20:27:36.442717 [debug] [MainThread]: Connection 'model.dbt_service.staging_data_profiling' was properly closed.
+[0m20:27:36.442812 [debug] [MainThread]: Connection 'model.dbt_service.staging_location_profiling' was properly closed.
+[0m20:27:36.442906 [debug] [MainThread]: Connection 'test.dbt_service.not_null_stg_fxf_data_email.547af3f2d1' was properly closed.
+[0m20:27:36.443001 [debug] [MainThread]: Connection 'test.dbt_service.not_null_stg_fxf_data_fxf_id.76da6d0fbe' was properly closed.
+[0m20:27:36.443097 [debug] [MainThread]: Connection 'test.dbt_service.unique_stg_fxf_data_fxf_id.b81bfb9c25' was properly closed.
+[0m20:27:36.443192 [debug] [MainThread]: Connection 'test.dbt_service.not_null_company_analysis_company.b4c562fde2' was properly closed.
+[0m20:27:36.443294 [debug] [MainThread]: Connection 'test.dbt_service.unique_company_analysis_company.2a96b2dba1' was properly closed.
+[0m20:27:36.443396 [debug] [MainThread]: Connection 'model.dbt_service.setup_functions' was properly closed.
+[0m20:27:36.444798 [debug] [MainThread]: Command end result
+[0m20:27:36.486072 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_service/target/manifest.json
+[0m20:27:36.487193 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_service/target/semantic_manifest.json
+[0m20:27:36.490678 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_service/target/run_results.json
+[0m20:27:36.492015 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m20:27:36.492134 [info ] [MainThread]: Building catalog
+[0m20:27:36.496430 [debug] [ThreadPool]: Acquiring new postgres connection 'finny_db.information_schema'
+[0m20:27:36.499427 [debug] [ThreadPool]: Using postgres connection "finny_db.information_schema"
+[0m20:27:36.499598 [debug] [ThreadPool]: On finny_db.information_schema: BEGIN
+[0m20:27:36.499710 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:27:36.507939 [debug] [ThreadPool]: SQL status: BEGIN in 0.008 seconds
+[0m20:27:36.508069 [debug] [ThreadPool]: Using postgres connection "finny_db.information_schema"
+[0m20:27:36.508280 [debug] [ThreadPool]: On finny_db.information_schema: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_service", "target_name": "dev", "connection_name": "finny_db.information_schema"} */
+
+    
+    
+
+    select
+        'finny_db' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('fxf_data')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_pdl_data')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('pdl_data')) or (upper(sch.nspname) = upper('public_marts') and
+           upper(tbl.relname) = upper('prospect_matching_ratio')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('state_iso_mapping')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_fxf_data')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_unified_prospects')) or (upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('company_analysis')) or (upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('staging_location_profiling')) or (upper(sch.nspname) = upper('public_raw_analysis') and
+           upper(tbl.relname) = upper('raw_company_profiling')) or (upper(sch.nspname) = upper('public_raw_analysis') and
+           upper(tbl.relname) = upper('raw_location_profiling')) or (upper(sch.nspname) = upper('public_marts') and
+           upper(tbl.relname) = upper('data_overview')) or (upper(sch.nspname) = upper('public_raw') and
+           upper(tbl.relname) = upper('raw_pdl_data')) or (upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('staging_data_profiling')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_entity_clusters')) or (upper(sch.nspname) = upper('public_staging') and
+           upper(tbl.relname) = upper('stg_prospect_matches')) or (upper(sch.nspname) = upper('public_raw_analysis') and
+           upper(tbl.relname) = upper('raw_data_profiling')) or (upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('staging_company_profiling')) or (upper(sch.nspname) = upper('public_raw') and
+           upper(tbl.relname) = upper('raw_fxf_data')) or (upper(sch.nspname) = upper('public_staging_analysis') and
+           upper(tbl.relname) = upper('staging_city_state_profiling')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('setup_functions')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m20:27:36.512908 [debug] [ThreadPool]: SQL status: SELECT 221 in 0.004 seconds
+[0m20:27:36.516421 [debug] [ThreadPool]: On finny_db.information_schema: ROLLBACK
+[0m20:27:36.517064 [debug] [ThreadPool]: On finny_db.information_schema: Close
+[0m20:27:36.525526 [debug] [MainThread]: Wrote artifact CatalogArtifact to dbt_service/target/catalog.json
+[0m20:27:36.538621 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_service/target/manifest.json
+[0m20:27:36.539575 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_service/target/semantic_manifest.json
+[0m20:27:36.539737 [info ] [MainThread]: Catalog written to /Users/mahmoud/Workspace/finny/dbt_service/target/catalog.json
+[0m20:27:36.543743 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.64563185, "process_in_blocks": "0", "process_kernel_time": 0.191349, "process_mem_max_rss": "138362880", "process_out_blocks": "0", "process_user_time": 1.076635}
+[0m20:27:36.544055 [debug] [MainThread]: Command `dbt docs generate` succeeded at 20:27:36.544017 after 0.65 seconds
+[0m20:27:36.544199 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m20:27:36.544314 [debug] [MainThread]: Connection 'finny_db.information_schema' was properly closed.
+[0m20:27:36.544466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103028710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103017b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10afa79d0>]}
+[0m20:27:36.544633 [debug] [MainThread]: Flushing usage events
+[0m20:27:36.762923 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:27:42.108920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108832410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088a3990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088a3f90>]}
+
+
+============================== 20:27:42.111086 | 70386e8e-6037-4ea4-aaca-7758106f852f ==============================
+[0m20:27:42.111086 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:27:42.111528 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_format': 'default', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'profiles_dir': 'dbt_service', 'partial_parse': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'target_path': 'None', 'printer_width': '80', 'quiet': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'static_parser': 'True', 'introspect': 'True', 'log_path': 'dbt_service/logs', 'write_json': 'True', 'invocation_command': 'dbt docs serve --project-dir dbt_service --profiles-dir dbt_service --port 8080', 'version_check': 'True', 'empty': 'None'}
+[0m20:27:42.197126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '70386e8e-6037-4ea4-aaca-7758106f852f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088291d0>]}
+[0m20:27:42.226517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '70386e8e-6037-4ea4-aaca-7758106f852f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c74d90>]}
