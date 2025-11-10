@@ -1,0 +1,1 @@
+{{ test_unique(column_name="fxf_id", model=get_where_subquery(ref('stg_fxf_data'))) }}

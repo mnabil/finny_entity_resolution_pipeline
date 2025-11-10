@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: setup_functions
+    description: "Ensures PostgreSQL functions required for deduplication are created"
+    columns:
+      - name: status
+        description: "Status message confirming function creation"

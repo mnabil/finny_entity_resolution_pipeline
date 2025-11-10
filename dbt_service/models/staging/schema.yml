@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: stg_fxf_data
+    description: "Cleaned and standardized FXF contact data"
+    columns:
+      - name: fxf_id
+        description: "Unique FXF identifier"
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Contact name"
+      - name: email
+        description: "Contact email address"
+        tests:
+          - not_null
+      - name: company
+        description: "Company name"
+      - name: company_revenue
+        description: "Company revenue in USD"
+      - name: title
+        description: "Job title"
+      - name: location
+        description: "Geographic location"
+
+  - name: stg_pdl_data
+    description: "Cleaned and standardized PDL contact data"
+    columns:
+      - name: pdl_id
+        description: "Unique PDL identifier"
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Contact name"
+      - name: email
+        description: "Contact email address (some may be null)"
+      - name: company
+        description: "Company name"
+      - name: company_revenue
+        description: "Company revenue in USD"
+      - name: title
+        description: "Job title"
+      - name: location
+        description: "Geographic location"

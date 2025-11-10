@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: company_analysis
+    description: "Analysis of companies across FXF and PDL datasets"
+    columns:
+      - name: company
+        description: "Company name"
+        tests:
+          - unique
+          - not_null
+      - name: data_sources
+        description: "Array of data sources (FXF, PDL, or both)"
+      - name: total_employees
+        description: "Total number of employees found across both datasets"
+      - name: total_unique_titles
+        description: "Total unique job titles found"
+      - name: average_revenue
+        description: "Average company revenue"
+      - name: all_locations
+        description: "Array of all locations where company has employees"

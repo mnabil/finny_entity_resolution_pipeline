@@ -1,0 +1,42 @@
+name: 'dbt_service'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_service'
+
+# These configurations specify where dbt should look for different types of files.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+models:
+  dbt_service:
+    # Raw data models
+    raw:
+      +materialized: table
+      +schema: raw
+    # Staging models - clean and normalize raw data
+    staging:
+      +materialized: view
+      +schema: staging
+    # Business logic and final models
+    marts:
+      +materialized: table
+      +schema: marts
+    # Raw data analysis and profiling
+    raw_analysis:
+      +materialized: table
+      +schema: raw_analysis
+    # Staging data analysis and profiling
+    staging_analysis:
+      +materialized: table
+      +schema: staging_analysis

@@ -1,0 +1,1 @@
+{{ test_unique(column_name="pdl_id", model=get_where_subquery(ref('raw_pdl_data'))) }}

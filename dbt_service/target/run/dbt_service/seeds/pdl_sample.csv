@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "finny_db"."public"."pdl_sample";
+    -- dbt seed --
+    
+          insert into "finny_db"."public"."pdl_sample" ("pdl_id", "name", "email", "company", "company_revenue", "title", "location") values
+          (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s)
+      
+
+;
+  

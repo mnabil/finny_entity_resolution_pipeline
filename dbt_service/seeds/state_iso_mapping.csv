@@ -1,0 +1,105 @@
+state_name,iso_code
+California,CA
+Texas,TX
+Colorado,CO
+Georgia,GA
+New York,NY
+Illinois,IL
+Washington,WA
+Tennessee,TN
+Massachusetts,MA
+Florida,FL
+North Carolina,NC
+Virginia,VA
+Pennsylvania,PA
+Ohio,OH
+Michigan,MI
+Arizona,AZ
+Nevada,NV
+Oregon,OR
+Utah,UT
+Wisconsin,WI
+Minnesota,MN
+Maryland,MD
+Connecticut,CT
+New Jersey,NJ
+Indiana,IN
+Missouri,MO
+Alabama,AL
+Louisiana,LA
+Kentucky,KY
+South Carolina,SC
+Iowa,IA
+Arkansas,AR
+Kansas,KS
+Nebraska,NE
+Oklahoma,OK
+Mississippi,MS
+Delaware,DE
+Rhode Island,RI
+New Hampshire,NH
+Vermont,VT
+Maine,ME
+Montana,MT
+North Dakota,ND
+South Dakota,SD
+Wyoming,WY
+Idaho,ID
+Alaska,AK
+Hawaii,HI
+West Virginia,WV
+New Mexico,NM
+District of Columbia,DC
+Washington DC,DC
+Washington D.C.,DC
+CA,CA
+TX,TX
+CO,CO
+GA,GA
+NY,NY
+IL,IL
+WA,WA
+TN,TN
+MA,MA
+FL,FL
+NC,NC
+VA,VA
+PA,PA
+OH,OH
+MI,MI
+AZ,AZ
+NV,NV
+OR,OR
+UT,UT
+WI,WI
+MN,MN
+MD,MD
+CT,CT
+NJ,NJ
+IN,IN
+MO,MO
+AL,AL
+LA,LA
+KY,KY
+SC,SC
+IA,IA
+AR,AR
+KS,KS
+NE,NE
+OK,OK
+MS,MS
+DE,DE
+RI,RI
+NH,NH
+VT,VT
+ME,ME
+MT,MT
+ND,ND
+SD,SD
+WY,WY
+ID,ID
+AK,AK
+HI,HI
+WV,WV
+NM,NM
+DC,DC

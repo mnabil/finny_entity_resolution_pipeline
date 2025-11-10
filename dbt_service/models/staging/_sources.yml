@@ -1,0 +1,41 @@
+version: 2
+
+sources:
+  - name: public
+    description: "Raw data tables in the public schema"
+    tables:
+      - name: fxf_data
+        description: "Raw FXF JSON data stored as CSV"
+        columns:
+          - name: fxf_id
+            description: "Primary key - FXF identifier"
+          - name: name
+            description: "Contact name"
+          - name: email
+            description: "Contact email address"
+          - name: company
+            description: "Company name"
+          - name: company_revenue
+            description: "Company revenue in USD"
+          - name: title
+            description: "Job title"
+          - name: location
+            description: "Geographic location"
+
+      - name: pdl_data
+        description: "Raw PDL JSON data stored as CSV"
+        columns:
+          - name: pdl_id
+            description: "Primary key - PDL identifier"
+          - name: name
+            description: "Contact name"
+          - name: email
+            description: "Contact email address"
+          - name: company
+            description: "Company name"
+          - name: company_revenue
+            description: "Company revenue in USD"
+          - name: title
+            description: "Job title"
+          - name: location
+            description: "Geographic location"

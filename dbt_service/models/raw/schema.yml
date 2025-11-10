@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: raw_fxf_data
+    description: "Raw FXF contact data"
+    columns:
+      - name: fxf_id
+        description: "Unique FXF identifier"
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Contact name"
+      - name: email
+        description: "Contact email address"
+      - name: company
+        description: "Company name"
+      - name: company_revenue
+        description: "Company revenue in USD"
+      - name: title
+        description: "Job title"
+      - name: location
+        description: "Geographic location"
+
+  - name: raw_pdl_data
+    description: "Raw PDL contact data"
+    columns:
+      - name: pdl_id
+        description: "Unique PDL identifier"
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Contact name"
+      - name: email
+        description: "Contact email address"
+      - name: company
+        description: "Company name"
+      - name: company_revenue
+        description: "Company revenue in USD"
+      - name: title
+        description: "Job title"
+      - name: location
+        description: "Geographic location"

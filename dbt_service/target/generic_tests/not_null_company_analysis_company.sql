@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="company", model=get_where_subquery(ref('company_analysis'))) }}
