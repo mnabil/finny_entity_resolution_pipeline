@@ -75,12 +75,12 @@ The similarity matching has been scaled up significantly from the initial 10% sa
 - Batch processing prevents memory issues with large datasets
 
 ### Key Metrics
-- **100,010 raw prospects** from both sources
-- **1,908 prospect matches** identified by similarity engine
-- **99,923 unique prospects** after deduplication 
-- **87 high-confidence duplicates** merged
-- **22 unique city/state combinations** analyzed
-- **5 schema layers** for organized data architecture
+- **100,010 raw prospects** from both sources (FXF: 50,005 + PDL: 50,005)
+- **113,771 prospect matches** identified by AI similarity engine on this run
+- **15,274 unique entity clusters** after advanced deduplication identified
+- **13,875 high-confidence duplicates** merged (13.87% deduplication rate)
+- **47 unique city/state combinations** analyzed with geographic intelligence
+- **5 schema layers** for organized data architecture (raw → staging → marts → analysis)
 
 ### Pipeline Overview
 
