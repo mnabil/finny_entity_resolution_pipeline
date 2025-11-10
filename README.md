@@ -51,8 +51,6 @@ The resulting tables include:
 - Company and contact details
 - Revenue and employee count metrics
 
-## Connecting from Applications
-
 ## Prospect Deduplication Pipeline
 
 Our advanced deduplication system identifies and merges duplicate prospects using similarity-based matching.
